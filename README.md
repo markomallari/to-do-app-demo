@@ -21,3 +21,18 @@ and run npm install
 after module installation run server using this command
 
 ### `node server.js`
+
+for user credentials you can use 2 accounts
+
+`username: test@test.com`
+`password: 123`
+
+`username: test1@test.com`
+`password: 123`
+
+or if you want to add user
+in
+
+`database.json`
+
+inside the server app in the link above
