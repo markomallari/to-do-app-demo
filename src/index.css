@@ -1,0 +1,56 @@
+.button {
+  border: none;
+  color: white;
+  padding: 10px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 0px;
+  cursor: pointer;
+}
+
+.pill-button {
+  border: none !important;
+  color: white !important;
+  padding: 0px 6px !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+  font-size: 16px !important;
+  margin: 4px 0px !important;
+  cursor: pointer !important;
+}
+
+.primary {
+  background-color: #2293b3 !important;
+}
+
+.danger {
+  background-color: #c84342 !important;
+}
+
+.update {
+  margin-right: 1rem !important;
+}
+
+.update-pill {
+  margin-right: 0.5rem !important;
+}
+
+.modal-content {
+  border-radius: 0 !important;
+  border: none !important;
+}
+
+.card {
+  margin: 1rem 0px;
+}
+
+.form-floating {
+  margin: 0.5rem 0px;
+}
+
+h6 {
+  margin-top: 1.5rem !important;
+}
