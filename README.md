@@ -2,7 +2,7 @@ To run the app use npm install and start the app after module download
 
 ### `npm install`
 
-### `npm start`
+### `PORT=3001 npm start`
 
 If you have yarn you can use this code
 
