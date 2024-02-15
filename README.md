@@ -8,7 +8,7 @@ If you have yarn you can use this code
 
 ### `yarn install`
 
-### `yarn start`
+### `PORT=3001 yarn start`
 
 please clone also the server part of this application using this link
 
