@@ -4,25 +4,41 @@ To run the app use npm install and start the app after module download
 
 ### `PORT=3001 npm start`
 
+or you can use vise versa
+
+### `npm start PORT=3001`
+
+depends on your preference
+
 If you have yarn you can use this code
 
 ### `yarn install`
 
-### `PORT=3001 yarn start`
+### `yarn start PORT=3001`
+
+or you can use vise versa
+
+### `PORT=3001 yarn start `
+
+depends on your preference
 
 please clone also the server part of this application using this link
 
 ### `https://github.com/markomallari/to-do-app-demo-server`
 
-and run npm install
+and run npm install to install package module
 
 ### `npm install`
 
-after module installation run server using this command
+or
+
+### `yarn install`
+
+after module installation run the server using this command
 
 ### `node server.js`
 
-for user credentials you can use 2 accounts
+for user credentials you can use this 2 accounts for testing
 
 `username: test@test.com`
 `password: 123`
@@ -30,8 +46,7 @@ for user credentials you can use 2 accounts
 `username: test1@test.com`
 `password: 123`
 
-or if you want to add user
-in
+or if you want to add user you can modify and add data on user field in
 
 `database.json`
 
