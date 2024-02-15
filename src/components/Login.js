@@ -18,7 +18,7 @@ const Login = (props) => {
     checkUser(data)
       .then((response) => {
         if (response?.data?.userExists) {
-          localStorage.setItem("user", JSON.stringify({ email }));
+          localStorage.setItem("user", JSON.stringify(response?.data?.data));
           dataLog(true);
           toast.success(`Successful logged in`, {
             position: toast.POSITION.TOP_RIGHT,

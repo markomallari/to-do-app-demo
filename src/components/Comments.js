@@ -8,13 +8,12 @@ const Comments = (props) => {
 
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
-      //isSetMsg(e.target.value)
+      const user = JSON.parse(localStorage.getItem("user"));
       const transformedData = {
         comment_id: parseInt(currentCount) + 1,
         post: e.target.value,
-        by: "Nestor Ong",
+        by: user[0]?.name,
       };
-
       task?.comments?.push(transformedData);
       dataFromCommentAdd(task);
       setMsg("");
