@@ -1,7 +1,8 @@
 import React from "react";
-import { Badge, Button } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import ListGroup from "react-bootstrap/ListGroup";
 import EditComment from "./EditComment";
+import Moment from "react-moment";
 
 const CommentLists = (props) => {
   const { task, commentlist, dataFromCommentDelete, dataFromCommentUpdate } =
@@ -21,7 +22,13 @@ const CommentLists = (props) => {
             key={i}
           >
             <div className="ms-2 me-auto">
-              <div className="fw-bold">"{comment?.post}"</div>-{comment?.by}
+              <div className="fw-bold">"{comment?.post}"</div>
+              <div className="name-pane">-{comment?.by}</div>
+              <div className="date-pane">
+                <Moment format="dddd, MMMM Do YYYY, h:mm:ss a">
+                  {comment?.dateTime}
+                </Moment>
+              </div>
             </div>
 
             <EditComment

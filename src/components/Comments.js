@@ -14,6 +14,7 @@ const Comments = (props) => {
         comment_id: parseInt(currentCount) + 1,
         post: e.target.value,
         by: user[0]?.name,
+        dateTime: new Date(),
       };
       task?.comments?.push(transformedData);
       dataFromCommentAdd(task);

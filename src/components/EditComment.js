@@ -14,6 +14,7 @@ const EditComment = (props) => {
 
   const updateComment = () => {
     comment.post = msg;
+    comment.dateTime = new Date();
     dataFromCommentUpdate(task);
     handleClose();
   };

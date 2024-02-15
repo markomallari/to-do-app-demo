@@ -54,3 +54,13 @@
 h6 {
   margin-top: 1.5rem !important;
 }
+
+.name-pane {
+  font-size: 12px;
+}
+
+.date-pane {
+  font-size: 9px;
+  font-style: italic;
+  margin-left: 0.4rem;
+}
