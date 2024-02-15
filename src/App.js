@@ -8,9 +8,11 @@ function App() {
 
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem("user"));
+    console.log(user);
     if (!user) {
       setLog(false);
-      return;
+    } else {
+      setLog(true);
     }
   }, []);
 
