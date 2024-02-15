@@ -2,23 +2,13 @@ To run the app use npm install and start the app after module download
 
 ### `npm install`
 
-### `PORT=3001 npm start`
-
-or you can use vise versa
-
-### `npm start PORT=3001`
-
-depends on your preference
+### `npm start`
 
 If you have yarn you can use this code
 
 ### `yarn install`
 
-### `yarn start PORT=3001`
-
-or you can use vise versa
-
-### `PORT=3001 yarn start `
+### `yarn start`
 
 depends on your preference
 

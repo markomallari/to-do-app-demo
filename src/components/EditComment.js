@@ -31,10 +31,10 @@ const EditComment = (props) => {
       >
         <Modal.Body>
           <Form>
-            <FloatingLabel controlId="floatingTextarea2" label="Comments">
+            <FloatingLabel controlId="floatingTextarea2" label="Update Comment">
               <Form.Control
                 as="textarea"
-                placeholder="Leave a comment here"
+                placeholder="add a comment and press enter"
                 style={{ height: "100px" }}
                 onChange={(e) => {
                   setMsg(e.target.value);

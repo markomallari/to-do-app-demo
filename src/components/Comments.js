@@ -22,10 +22,13 @@ const Comments = (props) => {
   };
   return (
     <>
-      <FloatingLabel controlId="floatingTextarea2" label="Comments">
+      <FloatingLabel
+        controlId="floatingTextarea2"
+        label="Add a comment and press enter"
+      >
         <Form.Control
           as="textarea"
-          placeholder="Leave a comment here"
+          placeholder="add a comment and press enter"
           style={{ height: "100px" }}
           onKeyDown={(e) => {
             handleKeyDown(e);
