@@ -2,12 +2,13 @@
 import Login from "./components/Login";
 import Todo from "./components/Todo";
 import { useState, useEffect } from "react";
+import { getUserStore } from "./utils/storage";
 
 function App() {
   const [log, setLog] = useState(false);
 
   useEffect(() => {
-    const user = JSON.parse(localStorage.getItem("user"));
+    const user = JSON.parse(getUserStore());
     if (!user) {
       setLog(false);
     } else {

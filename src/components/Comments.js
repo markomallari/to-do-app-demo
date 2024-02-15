@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Form from "react-bootstrap/Form";
+import { getUserStore } from "../utils/storage";
 
 const Comments = (props) => {
   const { task, currentCount, dataFromCommentAdd } = props;
@@ -8,7 +9,7 @@ const Comments = (props) => {
 
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
-      const user = JSON.parse(localStorage.getItem("user"));
+      const user = JSON.parse(getUserStore());
       const transformedData = {
         comment_id: parseInt(currentCount) + 1,
         post: e.target.value,

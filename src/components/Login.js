@@ -3,6 +3,7 @@ import "./Login.css";
 import { checkUser } from "../services/services";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { setUserStore } from "../utils/storage";
 toast.configure();
 
 const Login = (props) => {
@@ -18,7 +19,7 @@ const Login = (props) => {
     checkUser(data)
       .then((response) => {
         if (response?.data?.userExists) {
-          localStorage.setItem("user", JSON.stringify(response?.data?.data));
+          setUserStore(JSON.stringify(response?.data?.data));
           dataLog(true);
           toast.success(`Successful logged in`, {
             position: toast.POSITION.TOP_RIGHT,

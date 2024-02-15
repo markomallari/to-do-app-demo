@@ -10,13 +10,15 @@ import {
 } from "../services/services";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { getUserStore, removeUserStore } from "../utils/storage";
 toast.configure();
+
 const Todo = (props) => {
   const { dataLog } = props;
   const [tasks, setTasks] = useState([]);
 
   useEffect(() => {
-    const user = JSON.parse(localStorage.getItem("user"));
+    const user = JSON.parse(getUserStore());
     if (!user) {
       dataLog(false);
     }
@@ -117,7 +119,7 @@ const Todo = (props) => {
 
   const logout = () => {
     dataLog(false);
-    localStorage.removeItem("user");
+    removeUserStore();
     toast.error(`Logged out!`, {
       position: toast.POSITION.TOP_RIGHT,
     });
